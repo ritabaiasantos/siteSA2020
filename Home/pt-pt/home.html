@@ -122,39 +122,38 @@
     body {
         padding-top: 55px;
     }
+​
+</style>
 
-    .rowcvs{
-    background-color: #f2f2f2;
-    padding: 0;
-    margin: 0;
-  }
-​
-  .w3-button {
-    width:175px;
-    background-color:#1a1f65;
-    padding: 10px;
-  }
-​
-  a.cv:hover, a.cv:active{
-    background: #00c3e9;
-  }
-​
+<style>
   #titlecv{
     font-family: Helvetica;
     font-size: 50px;
     color: #00c3e9;
-    padding: 30px;
   }
-​
-  #cvtext{
-    font-family: Helvetica;
-    font-size: 25px;
-    color: #1a1f65;
-    padding-right: 50px;
-    padding-left: 50px;
+
+  .butn {
+  border: 2px solid black;
+  background-color: #f2f2f2;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  }
+
+  .default {
+  border-color: #1a1f65;
+  color: #1a1f65;
+  }
+
+  .default:hover {
+  background: #1a1f65;
+  color: white;
   }
 ​
 </style>
+
 
 <div class="text-center">
 <img src="https://thumbs.web.sapo.io/?pic=https://static-content.campus.altice.pt/images/nz/6oydxr7uk1vv0c6lfsuy.jpg&hash=fb1afc0f78e3aa0e126d99c458f3ee3d&W=1520&H=1520&ar=true&delay_optim=1&png=1" class="img-fluid" style="width: 100%" alt="Semana Aerospacial Home Image"> <!-- Imagem principal -->
@@ -205,7 +204,7 @@
       
       <center>
         <a href="http://saero.pt/pt-pt/speakers/speakers.html">
-          <button type="button" class="btn btn-light btn-lg">Sabe +</button>
+          <button type="button" class="btn btn-light btn-lg">Mais Informações</button>
         </a>
       </center>
 
@@ -227,7 +226,7 @@
       
       <center>
         <a href="http://saero.pt/pt-pt/companies.html">
-          <button type="button" class="btn btn-light btn-lg">Sabe +</button>
+          <button type="button" class="btn btn-light btn-lg">Mais Informações</button>
         </a>
       </center>
 
@@ -249,7 +248,7 @@
       
       <center>
         <a href="http://saero.pt/pt-pt/schedule.html">
-          <button type="button" class="btn btn-light btn-lg">Sabe +</button>
+          <button type="button" class="btn btn-light btn-lg">Mais Informações</button>
         </a>
       </center>
 
@@ -289,16 +288,16 @@
          </div>
 <p></p>
 
-
-
-<div class="rowcvs">
-  <br><br>
-  <center><strong id="titlecv">Faz upload do teu CV!</strong></center>
-  <br>
-  <center><p id="cvtext">Queres ter o teu CV disponível para muitas empresasa TOP que possam reconhecer o teu potencial? Então clica no link abaixo, onde poderás submeter o teu currículo e dares o próximo passo no teu percurso profissional:</p></center>
-  <br>
-  <center><a href="https://forms.gle/nMBgMJaXqsCjcdSv7" target="_blank" class="w3-button w3-round" class="cv" style="color: #FFFFFF;">Submete o teu CV!</a></center>
-  <br><br>
+<div class="container-fluid" style="background-color: #f2f2f2">
+  
+<div class="row">
+  
+  <div class="col" style="padding: 40px;">
+    <center><strong id="titlecv">Faz upload do teu CV!</strong></center>
+     <center><p style="color: #1a1f65; font-family: Helvetica; font-size: 25px; padding: 30px;">Queres ter o teu CV disponível para muitas empresasa TOP que possam reconhecer o teu potencial? Então clica no link abaixo, onde poderás submeter o teu curriculum vitae e dares o próximo passo no teu percurso profissional:</p></center>
+     <center><a href="https://forms.gle/nMBgMJaXqsCjcdSv7" target="_blank"><button class="butn default">Submete o teu CV!</button></a></center>
+  </div>
+</div>
 </div>
 
 <br><br><br>
@@ -516,15 +515,6 @@
   <!-- Copyright -->
 
 </footer>
-
-
-
-
-
-
-
-
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
