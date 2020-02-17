@@ -129,10 +129,61 @@
 </style>
 
 <style>
+    #scrolldown{
+
+  }
+
   #titlecv{
     font-family: Helvetica;
     font-size: 50px;
     color: #00c3e9;
+  }
+
+  .parent{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .ondas{
+    position: relative;
+    top: 35px;
+    left: 0;
+    max-width: 110%;
+    height: auto;
+    display: flex;
+    
+  }
+
+  .data{
+    font-family: Helvetica;
+    font-size: 200%;
+    color: #1a1f65;
+    text-align: center
+
+  }
+
+    .local{
+    font-family: Helvetica;
+    font-size: 200%;
+    color: #1a1f65;
+    text-align: center
+    }
+
+  .imagemsemana{
+    position: absolute;
+    text-align: center;
+    max-width: 75%;
+    transition: transform .2s;
+    top: 2%;
+    left: 12%;
+    height: auto;
+
+     
+  }
+
+  .imagemsemana:hover{
+    transform: scale(1.125);
   }
 
   .butn {
@@ -154,15 +205,72 @@
   background: #1a1f65;
   color: white;
   }
+
+  .arrow{
+    text-align: center;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+@media screen and (min-width: 1400px) {
+  .arrow {display: block;}
+
+
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid #016aaf;
+    border-right: 3px solid #016aaf;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px,-10px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(10px,10px);
+    }
+}
 ​
 </style>
 
 
-<div class="text-center">
-<img src="https://thumbs.web.sapo.io/?pic=https://static-content.campus.altice.pt/images/nz/6oydxr7uk1vv0c6lfsuy.jpg&hash=fb1afc0f78e3aa0e126d99c458f3ee3d&W=1520&H=1520&ar=true&delay_optim=1&png=1" class="img-fluid" style="width: 100%" alt="Semana Aeroespacial Home Image"> <!-- Imagem principal -->
+<br>
+
+<div class="parent">
+  <img class="ondas" src="https://thumbs.web.sapo.io/?pic=https://static-content.campus.altice.pt/images/ng/2fqshcq7g46alxck36fk.png&hash=fc075381f4d79237735f7ddad0646606&W=1520&H=1520&ar=true&delay_optim=1&png=1">
+  <img class="imagemsemana"  src="https://thumbs.web.sapo.io/?pic=https://static-content.campus.altice.pt/images/zj/up1c4v7sue5s35b59yzs.png&hash=5797224e3f5a021ec9e4872bc1d4b7fd&W=1520&H=1520&ar=true&delay_optim=1&png=1"  alt="Semana Aerospacial Home Image">
+  <br><br>
+</div>
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-6"><h1 class="data">2 a 5 de março, @ Técnico</h1></div>
+  <div class="col-md-6"><h1 class="local">Centro de Congressos e Pavilhão Central</h1></div>
+  </div>
+  <div class="row" style="position: absolute; left: 50%; top: 93%;">
+  <a href="#scrolldown"><div id="scrolldown" class="arrow">
+                <span></span>
+                <span></span>
+  </div></a>
+  </div>
 </div>
 
-<p></p>
+
+<br><br>
 
 
 <!-- CENA DA CONREGO PARA REGISTAR NO EVENTO! -->
