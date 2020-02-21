@@ -14,7 +14,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Semana Aeroespacial 2020">
+    <meta name="description" content="Orador Semana Aeroespacial 2020">
     <meta name="author" content="Aerotec">
     <link rel="icon" href="https://c549959.cdn.sapo.io/1/c549959/campus-fotos/e02/6b2c26cbe902dc1/65/c7/bc/163352_60aok.png">
 
@@ -195,6 +195,14 @@
 .jumbotron{
   max-height: 800px;
 }
+
+#horas {
+    font-family: Helvetica;
+    font-size: 20px;
+  }
+
+
+
 </style>
 
 
@@ -209,7 +217,8 @@
           <br>
           <center><p id="nome" style="color: rgb(26,31,101);">Ricardo Conde</p></center>
           <center><a href=""> <img src=" https://thumbs.web.sapo.io/?pic=https://static-content.campus.altice.pt/images/yz/ibzrsnrv0i0pmdigd0k1.png&hash=dd2a252e8701add3e5fdad9ccdd906cf&W=1520&H=1520&ar=true&delay_optim=1&png=1" alt="Portugal Space" style="width:50%"></a></center><br>
-          <center><p id="cargo" style="color: rgb(1, 106, 175);">Membro da Direção</center></p><center><p id= "palestra" style="color: rgb(1, 106, 175);">The Future Trends of the Space Sector up to 2030 And the National opportunities in Space for this decade</p></center>
+          <center><p id="cargo" style="color: rgb(1, 106, 175);">Membro da Direção</center></p><center><p id= "palestra" style="color: rgb(1, 106, 175); font-style: italic;">Space Trends & National Opportunities</p></center>
+          <center><p id= "horas" style="color: rgb(1, 106, 175);">Segunda-feira, 11:30</p></center>
           <!--<center><p id="palestra" style="color: rgb(1, 106, 175);">Nome da Palestra</p></center>-->
           <br>
           <br> 
@@ -231,7 +240,7 @@
         <div class="jumbotron"style="background-color: rgb(245, 245, 245)">
           <center><h3>Biografia</h3></center>
           <br>
-          <p align="justify">EM PORTUGUÊS!!!!! -> Bla bla bla bla bla bla </p>
+          <p align="justify">Ricardo Conde, Engenheiro Eletrotécnico formado no IST, trabalhou durante diversos anos como Ground Segment Manager na Edisoft. <br> Atualmente, desempenha o papel de administrador na Portugal Space, a Agência Espacial Portuguesa, responsável pela colaboração com outros países  de forma a obter o maior retorno do investimento nacional no espaço, pelo que virá abordar as diferentes tendências do Sector Espacial até 2030 e as oportunidades nacionais no espaço para esta década.</p>
           <br>
       </div>
     </div>
@@ -241,7 +250,7 @@
 <br><br>
 
 <!-- Footer -->
-<footer class="page-footer font-small teal pt-4 py-0" style="background-color: #016aaf; padding-right: 0px; padding-left: 0px;">
+<footer class="page-footer font-small teal pt-4 py-0" style="background-color: #016aaf;">
 
   <div class="container-fluid text-center text-md-left">
     <div class="row">
@@ -315,8 +324,8 @@
           <div class="col-sm-8 py-lg-5 py-md-3">
             <h5 style="color: #FFFFFF;">A Semana Aeroespacial é um projeto:</h5>
 
-            <a href="https://aerotec.tecnico.ulisboa.pt">
-              <img src="https://thumbs.web.sapo.io/?pic=https://static-content.campus.altice.pt/images/yw/fmml3jfqe4czsznsclhu.png&hash=a4cb0693646144769ac0331c03ac8e1d&W=1520&H=1520&ar=true&delay_optim=1&png=1" style="width:90%; max-width: 200px;" alt="Logo Aerotec"> </a>
+            <a href="https://aerotec.tecnico.ulisboa.pt" target="_blank">
+              <img src="https://thumbs.web.sapo.io/?pic=https://static-content.campus.altice.pt/images/yw/fmml3jfqe4czsznsclhu.png&hash=a4cb0693646144769ac0331c03ac8e1d&W=1520&H=1520&ar=true&delay_optim=1&png=1"  style="width:90%; max-width: 200px;" alt="Logo Aerotec"> </a>
               <p></p>
           </div>
         </div>
@@ -327,37 +336,13 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3" style="background-color: #000000;"> <h6><p class="font-weight-bolder text-white text-center"> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> CC BY-NC-SA </a> ✈️  SA 2020 ✈️
-    <a href="https://aerotec.tecnico.ulisboa.pt"> AEROTEC</a></p> </h6>
+    <a href="https://aerotec.tecnico.ulisboa.pt" target="_blank"> AEROTEC</a></p> </h6>
   </div>
   <!-- Copyright -->
 
 </footer>
 
-<script>
-$(document).ready(function(){
-  // Add scrollspy to <body>
-  $('body').scrollspy({target: ".navbar", offset: 50});   
-  // Add smooth scrolling on all links inside the navbar
-  $("#navbarSupportedContent2 a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-      // Store hash
-      var hash = this.hash;
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    }  // End if
-  });
-});
-</script>
+
 </body>
 </html>
 </html>  
